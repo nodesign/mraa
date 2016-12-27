@@ -46,17 +46,18 @@ typedef enum {
     MRAA_BEAGLEBONE = 6,            /**< The different BeagleBone Black Modes B/C */
     MRAA_BANANA = 7,                /**< Allwinner A20 based Banana Pi and Banana Pro */
     MRAA_INTEL_NUC5 = 8,            /**< The Intel 5th generations Broadwell NUCs */
-    MRAA_96BOARDS = 9,            /**< Linaro 96boards */
+    MRAA_96BOARDS = 9,				/**< Linaro 96boards */
     MRAA_INTEL_SOFIA_3GR = 10,      /**< The Intel SoFIA 3GR */
-    MRAA_INTEL_CHERRYHILLS = 11,     /**< The Intel Braswell Cherryhills */
-    MRAA_UP = 12,                    /**< The UP Board */
-    MRAA_INTEL_GT_TUCHUCK = 13,      /**< The Intel GT Tuchuck Board */
+    MRAA_INTEL_CHERRYHILLS = 11,	/**< The Intel Braswell Cherryhills */
+    MRAA_UP = 12,                   /**< The UP Board */
+    MRAA_INTEL_GT_TUCHUCK = 13,     /**< The Intel GT Tuchuck Board */
 
     // USB platform extenders start at 256
     MRAA_FTDI_FT4222 = 256,         /**< FTDI FT4222 USB to i2c bridge */
 
     // contains bit 9 so is subplatform
     MRAA_GENERIC_FIRMATA = 1280,    /**< Firmata uart platform/bridge */
+    MRAA_ELECTROLINK = 1389,		/**< Electrolink platform/bridge */
 
     MRAA_MOCK_PLATFORM = 96,        /**< Mock platform, which requires no real hardware */
     MRAA_JSON_PLATFORM = 97,        /**< User initialised platform from json*/

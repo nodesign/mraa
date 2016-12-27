@@ -47,6 +47,13 @@ if (FIRMATA)
   target_link_libraries (i2c_firmata mraa)
 endif ()
 
+if (ELECTROLINK)
+  add_executable (firmata_curie_imu firmata_curie_imu.c)
+  add_executable (i2c_firmata i2c_firmata.c)
+  target_link_libraries (firmata_curie_imu mraa)
+  target_link_libraries (i2c_firmata mraa)
+endif ()
+
 add_subdirectory (c++)
 
 install (DIRECTORY ${PROJECT_SOURCE_DIR}/examples/ DESTINATION ${CMAKE_INSTALL_DATADIR}/mraa/examples)
